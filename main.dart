@@ -14,16 +14,27 @@ void main() {
    * 
    * dynamic Type
    * 여러가지 타입을 가질 수 있다. 
-   *  
    */
-  // var name = "제이";
-  // name = "제이2";
-  // String str_name = '안녕';
+  // var name; // dynamic: 값 할당 X
+  // dynamic name2; // dynamic 타입 선언
 
-  var name; // dynamic: 값 할당 X
-  dynamic name2; // dynamic 타입 선언
+  // if (name is String) {
+  //   // dynamic 타입의 유효 체크
+  // } else if (name is int) {}
 
-  if (name is String) {
-    // dynamic 타입의 유효 체크
-  } else if (name is int) {}
+/**
+ * Nullable
+ */
+
+  bool isEmpty(String string) => string.length() == 0;
+  isEmpty(null);
+
+  // 어떤 변수가 Null이 될수있음을 정확히 표시해줘야한다.
+  // String jay = 'jay';
+  // jay = null; // X
+
+  String? jay = 'jay'; // type 뒤에 ?를 붙이면 string또는 null이될수도 있다.
+  jay = null;
+
+  jay?.isNotEmpty; // jay가 null이 아닐때만 isNotEmpty를 준다.
 }
