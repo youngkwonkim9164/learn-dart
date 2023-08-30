@@ -40,20 +40,19 @@ void main() {
 
   /**
    * Final Variables
+      String name = 'jay';
+      name = 'jay modif'; // String으로만 선언하면 수정이 가능하다.
+
+      final String final_name = 'jay'; // final 뒤에 타입선언해도 되지만 추론이 가능해서 보통 사용은 안함
+      final_name = 'jay modif'; // final로 선언하면 수정이 불가능하다.
    */
-
-  // String name = 'jay';
-  // name = 'jay modif'; // String으로만 선언하면 수정이 가능하다.
-
-  // final String final_name = 'jay'; // final 뒤에 타입선언해도 되지만 추론이 가능해서 보통 사용은 안함
-  // final_name = 'jay modif'; // final로 선언하면 수정이 불가능하다.
 
   /**
    * Late Variables
    * late는 값이 없이 선언하게 해준다. 
    * 즉, 변수 먼저 만들고 값은 나중에 넣게 만들어준다.
+  
+      late final String name;
+      name = 'jay'; // 가능!
    */
-
-  late final String name;
-  name = 'jay'; // 가능!
 }
