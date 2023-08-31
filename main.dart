@@ -61,8 +61,9 @@ void main() {
  * Const Variables
  * Dart에서 Const는 compile-time constant를 만들어준다.
  * 즉, const 로 선언한 변수의 값은 절대 바뀌지않고, 컴파일이 될 때 그 값을 알고있다.
- */
 
   const name = 'jay';
   name = 'jay modifiy'; // 불가능
+ */
+
 }
