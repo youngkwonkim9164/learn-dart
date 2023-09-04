@@ -1,3 +1,3 @@
 # learn-dart
 
-study dart! 
+study dart! from nomad coders. 
